@@ -649,6 +649,13 @@ footer {
     }
 }
 
+@media screen and (max-width: 753px) {
+    .gallery-container img {
+        width: 40%;
+       
+    }
+}
+
 @media screen and (max-width: 500px) {
 
     /* any viewport that is 500px or less */
@@ -659,7 +666,7 @@ footer {
         align-content: ;
     }
 
-    header .logo{
+    header .logo {
         /* width: 100% */
         margin-right: 10%;
         margin-top: 10%;
