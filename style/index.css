@@ -397,49 +397,42 @@ body {
     background-image: url(https://images.unsplash.com/photo-1507908708918-778587c9e563?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80);
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    /* background-color: skyblue; */
-    padding: 2%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-
-
 header .logo {
-    width: 30%;
+    text-align: center;
+    margin: 2% auto;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 2rem;
+    font-size: 3rem;
+    display: block;
+    max-width: 500px;
+    width: 90%;
+    font-size: 3rem;
 }
 
-header .logo:hover {
-    color: orange;
-}
+
 
 .navbar {
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 
 .navbar a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.7rem;
     color: white;
+    margin: 0 3%;
+    padding: 10px 1%;
+    border-radius: 20px;
 }
 
 .navbar a:hover {
@@ -452,12 +445,12 @@ header .logo:hover {
     justify-content: space-around;
     /* flex-wrap: wrap; */
     text-align: center;
-    margin-top: 30px;
+    margin-top: 5%;
 }
 
 .item img {
-    width: 300px;
-    border-radius: 50px;
+    width: 400px;
+    border-radius: 60%;
 
 }
 
@@ -466,9 +459,10 @@ header .logo:hover {
 }
 
 .item p {
-    font-size: 4rem;
+    text-align: center;
+    font-size: 2rem;
     padding: 10px;
-    line-height: 40px;
+    /* line-height: 40px; */
 }
 
 .gallery-container {
@@ -481,10 +475,15 @@ header .logo:hover {
     border-bottom: white dashed 1px;
 }
 
+.gallery-container .picture {
+    width: 600px;
+}
+
 .picture {
     border: 2px orange solid;
     border-radius: 5px;
     margin: 10px;
+
 }
 
 .picture:hover {
@@ -539,8 +538,12 @@ footer {
 }
 
 .social a i {
-    font-size: 50px;
-    color: orange;
+    font-size: 4rem;
+    color: white;
+}
+
+.social h2 {
+    font-size: 3rem;
 }
 
 .social a :hover {
@@ -551,8 +554,9 @@ footer {
 .about-text {
     text-align: center;
     font-size: 2rem;
-    color: white;
-    margin-top: 20px;
+    color: black;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .hobby-container {
@@ -565,7 +569,9 @@ footer {
     color: orange
 }
 
-
+.hobby-child h3 {
+    font-size: 2.5rem;
+}
 
 .hobby-child img {
     margin: 20px;
@@ -579,131 +585,86 @@ footer {
 /* Project page */
 .project-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .pchild img {
     border: orange solid 2px;
+    width: 100%;
+    height: auto;
+    margin: 2%;
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 800px) {
 
-    /* any viewport that is 800px or less */
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        align-content: ;
-    }
-
-    header h1 {
-        /* width: 100% */
-        margin-left: 20%;
-        margin-top: 40%;
-        font-size: 4rem;
-    }
-
+    /* Home page section */
     .navbar {
         flex-direction: column;
-        width: 22%;
-        /* margin-right: 0 auto; */
-        text-align: center;
-        /* border: 1px solid black; */
-        /* margin-right: 30%; */
-        /* margin-top: %; */
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
-
-    .navbar a {
-        font-size: 3rem;
+    .navbar a{
+        font-size: 3.5vw;
     }
 
-    .navbar a:hover {
-        color: white;
-        background-color: orange;
-        border-radius: 3%;
+    header .logo{
+        font-size: 5vw;
     }
 
-    /* p next to robot */
-    .item p {
-        color: white;
-        font-size: 3rem;
-    }
-
-    .project-container .pchild {
-        margin: 3%;
-    }
-
-    .project-container .pchild img {
-        width: 100%;
-        height: auto;
-    }
-
-    .hobby-container .hobby-container img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 753px) {
-    .gallery-container img {
-        width: 40%;
-       
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    /* any viewport that is 500px or less */
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        align-content: ;
-    }
-
-    header .logo {
-        /* width: 100% */
-        margin-right: 10%;
-        margin-top: 10%;
-        font-size: 4rem;
-    }
-
-    .flex-box .item {
-        text-align: center;
-        color: white;
-        font-size: 5rem;
-    }
-
-    /* robot image */
     .item img {
-        width: 100%;
         height: auto;
+        width: 100%;
+        max-width: 720px;
     }
 
-    /* p next to robot */
     .item p {
-        color: white;
-        font-size: 2.9rem;
+        font-size: 3vw;
     }
 
-    .gallery-container img {
-        width: 40%;
+    
+    .gallery-container .picture {
+        width: 25%;
     }
 
-    .project-container .pchild img {
-        /* margin: 2%; */
-        /* padding:0 10%; */
-        padding: 0 5%;
-        border: none;
-        /* width: 90%; */
-        /* margin-right: 20%; */
-        width: 100%;
-        height: auto;
+    /* About Page */
+
+    .about-text h2{
+        font-size: 5vw;
+    }
+
+    .hobby-container{
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+    }
+    .hobby-container h3{
+        font-size: 4vw;
+    }
+    .hobby-container img{
+        width: 10%;
+    }
+
+    /* Project Page */
+
+    
+    
+}
+
+@media screen and (max-width: 500px){
+    .logo{
+        color: pink;
+    }
+
+    .social{
+        align-items: flex-start;
+        margin: 40px 10px;
+    }
+    .social h2{
+        /* margin: 5% 0; */
+        font-size: 4vw;
     }
 
 }
