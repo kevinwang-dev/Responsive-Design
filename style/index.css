@@ -10,6 +10,7 @@
 
 html {
     line-height: 1.15;
+
     /* 1 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
@@ -576,7 +577,7 @@ footer {
 .hobby-child img {
     margin: 20px;
     border-radius: 10px;
- 
+
 }
 
 .hobby-child img:hover {
@@ -599,8 +600,11 @@ footer {
 }
 
 /* Media Queries */
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+    .hobby-container img {
+        max-width: 100%;
+        height: auto;
+    }
 
     /* Home page section */
     .navbar {
@@ -608,65 +612,69 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .navbar a{
+
+    .navbar a {
         font-size: 3.5vw;
     }
 
-    header .logo{
+    header .logo {
         font-size: 3vw;
     }
 
     .item img {
         height: auto;
         width: 100%;
-        
+
     }
 
     .item p {
         font-size: 3vw;
     }
 
-    
+
     .gallery-container .picture {
         width: 25%;
     }
 
     /* About Page */
 
-    .about-text h2{
+    .about-text h2 {
         font-size: 5vw;
     }
 
-    .hobby-container{
+    .hobby-container {
         flex-wrap: wrap;
         /* flex-direction: row; */
     }
-    .hobby-container h3{
+
+    .hobby-container h3 {
         font-size: 3vw;
     }
-    .hobby-container img{
+
+    .hobby-container img {
         max-width: 100%;
         height: auto;
     }
 
-    .social h2{
+    .social h2 {
         font-size: 5vw;
     }
 
-    
-    
+
+
 }
 
-@media screen and (max-width: 500px){
-    .logo{
+@media screen and (max-width: 500px) {
+    .logo {
         color: pink;
     }
 
-    .social{
+    .social {
         align-items: flex-start;
         margin: 40px 10px;
     }
-    .social h2{
+
+    .social h2 {
         /* margin: 5% 0; */
         font-size: 4vw;
     }
