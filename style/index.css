@@ -476,7 +476,7 @@ header .logo {
 }
 
 .gallery-container .picture {
-    width: 600px;
+    width: 250px;
 }
 
 .picture {
@@ -576,6 +576,7 @@ footer {
 .hobby-child img {
     margin: 20px;
     border-radius: 10px;
+ 
 }
 
 .hobby-child img:hover {
@@ -612,13 +613,13 @@ footer {
     }
 
     header .logo{
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     .item img {
         height: auto;
         width: 100%;
-        max-width: 720px;
+        
     }
 
     .item p {
@@ -641,13 +642,16 @@ footer {
         /* flex-direction: row; */
     }
     .hobby-container h3{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .hobby-container img{
-        width: 10%;
+        max-width: 100%;
+        height: auto;
     }
 
-    /* Project Page */
+    .social h2{
+        font-size: 5vw;
+    }
 
     
     
